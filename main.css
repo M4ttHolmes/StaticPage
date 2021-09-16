@@ -39,6 +39,13 @@ body {
     cursor: pointer;
 }
 
+#close-button img {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+}
+
 a {
     text-decoration: none;
     color: white;
