@@ -54,3 +54,37 @@ a {
 a:visited {
     color: white;
 }
+
+#nav {
+    background-color: #2d2d2d;
+    z-index: 4;
+    width: 100%;
+    position: fixed;
+    font-size: 21px;
+    left: 0px;
+    top: 52px;
+    display: flex;
+    color: white;
+}
+
+#brand-img {
+    background-color: #ec1414;
+    width: 33px;
+    padding: 10px 20px;
+}
+
+#home-wrapper {
+    float: left;
+}
+
+#nav-items {
+    float: right;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: left;
+    list-style-type: none;
+    line-height: 40px;
+}
