@@ -3,6 +3,8 @@ body {
     font-weight: 400;
     font-style: normal;
     letter-spacing: .035em;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #cares-nav {
@@ -58,33 +60,68 @@ a:visited {
 #nav {
     background-color: #2d2d2d;
     z-index: 4;
+    height: 70px;
     width: 100%;
     position: fixed;
     font-size: 21px;
     left: 0px;
     top: 52px;
-    display: flex;
     color: white;
+}
+
+#brand {
+    display: inline-block;
+    position: relative;
+    top: -28px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 
 #brand-img {
     background-color: #ec1414;
     width: 33px;
-    padding: 10px 20px;
-}
-
-#home-wrapper {
-    float: left;
+    padding: 12px 20px 12px 18px;
 }
 
 #nav-items {
-    float: right;
+    position: relative;
+    top: -115px;
 }
 
 .nav-link {
     text-transform: uppercase;
     font-size: 14px;
-    text-align: left;
     list-style-type: none;
-    line-height: 40px;
+    float: right;
+    margin: 0 20px;
+    padding-top: 22px;
+}
+
+#red-button {
+    background-color: #e33e42;
+    height: 48px;
+    width: 100px;
+    position: relative;
+    left: 20px;
+    padding-right: 5px;
+    padding-left: 20px;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-right: 50px white;
+}
+
+#blue-button {
+    background-color: #348db9;
+    height: 48px;
+    position: relative;
+    left: 60px;
+    padding-right: 25px;
+    padding-left: 20px;
+    border-style: solid;
+    border-top:none;
+    border-bottom: none;
+    border-right: 50px white;
 }
