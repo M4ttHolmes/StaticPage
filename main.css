@@ -1,7 +1,49 @@
 body {
     font-family: 'Overpass', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .025em;
 }
 
-#video-background {
-    background: url(./images/EFA-home-background.mp4);
+#cares-nav {
+    background-color: #fdb715;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    min-height: 33px;
+    padding: 5px;
+    font-size: 14px;
+    color: #040502;
+    border-bottom: 0px solid transparent;
+    box-shadow: 0 0px 10px 0px rgb(0 0 0 / 35%)
+}
+
+#cares-button{
+    color: white;
+    background-color: #434345;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 6px 5px;
+    margin: 5px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#cares-button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
 }
