@@ -34,6 +34,7 @@ body {
     margin: 5px;
     font-style: normal;
     font-weight: normal;
+    -webkit-font-smoothing: antialiased;
 }
 
 #cares-button:hover {
@@ -75,6 +76,7 @@ a, a:visited {
     font-size: 20px;
     font-weight: 200;
     font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    -webkit-font-smoothing: antialiased;
 }
 
 #brand-img {
@@ -241,6 +243,7 @@ video {
     position: fixed;
     bottom: 0px;
     right: 0px;
+    z-index: 5;
 }
 
 #hubspot-image {
@@ -248,3 +251,37 @@ video {
     height: 85px;
 }
 
+#page-content {
+    display: block;
+    position: relative;
+    top: -260px;
+    height: 700px;
+    background-color: #efefef;
+}
+
+#course-info {
+    color: #348db9;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    padding-top: 70px;
+}
+
+#card-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.course-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin: 6px;
+    background-color: white;
+}
+
+.card-link, .card-link:visited {
+    color: black;
+}
