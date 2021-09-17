@@ -237,3 +237,14 @@ video {
     content: "\f13a";
 }
 
+#hubspot-widget {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#hubspot-image {
+    width: 85px;
+    height: 85px;
+}
+
