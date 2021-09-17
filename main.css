@@ -73,7 +73,9 @@ a:visited {
     display: inline-block;
     position: relative;
     top: -28px;
-    left: 15px;
+    left: -6px;
+    padding-top: 20px;
+    padding-left: 25px;
     font-size: 20px;
     font-weight: 200;
     font-family: 'Crimson Text',"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -83,6 +85,11 @@ a:visited {
     background-color: #ec1414;
     width: 33px;
     padding: 12px 20px 12px 18px;
+    transition: background-color 0.5s;
+}
+
+#home:hover #brand-img {
+    background-color: #A9091A;
 }
 
 #nav-items {
@@ -95,8 +102,18 @@ a:visited {
     font-size: 14px;
     list-style-type: none;
     float: right;
-    margin: 0 15px;
+    margin: 0;
     padding-top: 24px;
+}
+
+.dropdown {
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 24px;
+}
+
+.dropdown:hover {
+    background-color: black;
 }
 
 #red-button {
@@ -105,20 +122,19 @@ a:visited {
     width: 100px;
     margin: 0;
     position: relative;
-    /* left: 20px; */
     padding-right: 5px;
     padding-left: 20px;
     border-style: solid;
     border-top: none;
     border-bottom: none;
     border-right: 50px white;
+    transition: background-color 0.5s;
 }
 
 #blue-button {
     background-color: #348db9;
     height: 46px;
     position: relative;
-    /* left: 60px; */
     margin: 0;
     padding-right: 25px;
     padding-left: 20px;
@@ -126,17 +142,37 @@ a:visited {
     border-top:none;
     border-bottom: none;
     border-right: 50px white;
+    transition: background-color 0.5s;
+}
+
+#blue-button:hover {
+    background-color: #429ACD;
+}
+
+#red-button:hover {
+    background-color: #A9091A;
+}
+
+.dashicons {
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+}
+
+.dashicons:hover {
+    background-color: black;
 }
 
 .dashicons-search:before {
-    position: relative;
-    top: 2px;
-    left: -2px;
     content: "\f179";
     color: white;
 }
 
+video {
+    width: 100%;
+}
 #video-background {
     position: relative;
-    top: 200px;
+    top: 50px;
 }

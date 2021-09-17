@@ -11,7 +11,7 @@
     <link rel="icon" href="./images/favicon.png">
 </head>
 <body>
-    <!-- Yellow Notification Bar above main navigation -->
+    <!-- * Yellow Notification Bar above main navigation -->
     <div id="cares-nav">CARES Act funding is running out! (Up to 100% off tuition.) Schedule a meeting ASAP!
         <button id="cares-button"><a href="#" target="_blank">Click Here</a></button>
         <div id="close-button">
@@ -19,33 +19,37 @@
         </div>
     </div>
 
-    <!-- Site Main Navigation Panel -->
+    <!-- * Site Main Navigation Panel -->
     <nav id="nav">
         <div id="home-wrapper">
-            <img id="brand-img" src="./images/eleven-fifty-logo-shield.png" alt="EFA Shield">
-            <h1 id="brand">Eleven Fifty Academy</h1>
+            <a href="#" target="_blank" id="home">
+                <img id="brand-img" src="./images/eleven-fifty-logo-shield.png" alt="EFA Shield">
+                <h1 id="brand">Eleven Fifty Academy</h1>
+            </a>
         </div>
         <div id="nav-items">
             <ul>
-                <li class="nav-link" id="red-button"><a href="#" target="_blank">Apply Now</a></li>
-                <li class="nav-link" id="blue-button"><a href="#" target="_blank">Schedule a Meeting</a></li>
-                <li class="nav-link dashicons dashicons-search"></li>
-                <li class="nav-link"><a href="#" target="_blank">Employers</a></li>
-                <li class="nav-link"><a href="#" target="_blank">Campus</a></li>
-                <li class="nav-link"><a href="#" target="_blank">About</a></li>
-                <li class="nav-link"><a href="#" target="_blank">Veterans</a></li>
-                <li class="nav-link"><a href="#" target="_blank">Admissions</a></li>
-                <li class="nav-link"><a href="#" target="_blank">Courses</a></li>
+                <a href="#" target="_blank"><li class="nav-link" id="red-button">Apply Now</li></a>
+                <a href="#" target="_blank"><li class="nav-link" id="blue-button">Schedule a Meeting</li></a>
+                <a href="#" target="_blank"><li class="nav-link dashicons dashicons-search"></li></a>
+                <a href="#" target="_blank"><li class="nav-link dropdown">Employers</li></a>
+                <a href="#" target="_blank"><li class="nav-link dropdown">Campus</li></a>
+                <a href="#" target="_blank"><li class="nav-link dropdown">About</li></a>
+                <a href="#" target="_blank"><li class="nav-link dropdown">Veterans</li></a>
+                <a href="#" target="_blank"><li class="nav-link dropdown">Admissions</li></a>
+                <a href="#" target="_blank"><li class="nav-link dropdown">Courses</li></a>
             </ul>
         </div>
     </nav>
 
-    <!-- Video background & button overlay -->
+    <!-- * Video background & button overlay -->
     <div id="video-background">
 
+<!-- TODO: REMEMBER TO ADD AUTOPLAY BACK IN -->
+        <video loop muted src="./images/EFA-home-background.mp4"></video>
     </div>
 
-    <!-- Course Info Flexbox Area -->
+    <!-- * Course Info Flexbox Area -->
     <div id="course-info"></div>
 </body>
 </html>
