@@ -48,12 +48,8 @@ body {
     width: 16px;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
-    color: white;
-}
-
-a:visited {
     color: white;
 }
 
@@ -177,6 +173,60 @@ video {
     top: 50px;
 }
 
-#pageTitle {
-    font-size: 55px;
+#overlay {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 990px;
+    top: -645px;
 }
+
+#pageTitle {
+    font-size: 56px;
+    color: white;
+    text-align: left;
+    width: auto;
+    padding: 13px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+    margin-bottom: -10px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+#learn-more-button {
+    font-size: 32px;
+    width: 270px;
+    background-color: #e33e42;
+    padding: 3px 20px;
+    transition:  background-color 0.5s;
+    letter-spacing: 3px;
+}
+
+#learn-more-button:hover {
+    background-color: #A9091A;
+}
+
+#scroll-chevron {
+    position: relative;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 65px;
+    display: block;
+    top: 355px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0px 0px 12px rgb(0 0 0 / 80%);
+    transition: color 0.5s;
+    -webkit-font-smoothing: antialiased;
+}
+
+#scroll-chevron:hover {
+    color: #ec1414;
+}
+
+#scroll-chevron::before {
+    content: "\f13a";
+}
+
