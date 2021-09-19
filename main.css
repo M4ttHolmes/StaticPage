@@ -86,10 +86,6 @@ a, a:visited {
     transition: background-color 0.5s;
 }
 
-#home:hover #brand-img {
-    background-color: #A9091A;
-}
-
 #nav-items {
     position: relative;
     top: -115px;
@@ -147,10 +143,6 @@ a, a:visited {
     background-color: #429ACD;
 }
 
-#red-button:hover {
-    background-color: #A9091A;
-}
-
 .dashicons {
     padding-top: 25px;
     padding-right: 20px;
@@ -206,15 +198,11 @@ video {
     letter-spacing: 3px;
 }
 
-#learn-more-button:hover {
-    background-color: #A9091A;
-}
-
 #learn-more-button:after {
     font-family: "FontAwesome";
     content: '\f054';
     font-size: 80%;
-    padding-left: 5px;
+    padding-left: 6px;
 }
 
 #scroll-chevron {
@@ -229,6 +217,7 @@ video {
     text-shadow: 0px 0px 12px rgb(0 0 0 / 80%);
     transition: color 0.5s;
     -webkit-font-smoothing: antialiased;
+    z-index: 3;
 }
 
 #scroll-chevron:hover {
@@ -274,14 +263,62 @@ video {
     justify-content: center;
 }
 
+.card-content {
+    background-color: white;
+    height: 350px;
+    transition: background-color 0.5s;
+}
+
+#red-button:hover, #home:hover #brand-img, #learn-more-button:hover, .card-button:hover, .card-link:hover .card-button {
+    background-color: #A9091A;
+}
+
+.card-content:hover, .card-link:hover .card-content {
+    background-color: #CACACA;
+}
+
 .course-wrapper {
     display: flex;
     flex-direction: column;
     width: 380px;
     margin: 6px;
-    background-color: white;
 }
 
 .card-link, .card-link:visited {
     color: black;
 }
+
+.card-button {
+    display: flex;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: 700;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: #e33e42;
+    transition: background-color 0.5s;
+}
+
+.card-button:after {
+    font-family: "FontAwesome";
+    padding: 6px;
+    content: '\f054';
+}
+
+.card-content h2 {
+    padding: 10px 35px;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.card-content p {
+    font-size: 19px;
+    color: #676767;
+    line-height: 1.4;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
